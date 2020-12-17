@@ -31,7 +31,7 @@ public class HAND {
 			System.out.println("Players Hand: ");
 		} else {
 			System.out.println("Dealers Hand: ");
-			System.out.println("\t Card: ?????");
+			System.out.println("\tCard: ?????");
 		}
 	}
 	
@@ -75,7 +75,7 @@ public class HAND {
         }
         if (x==0) {
 			getTotalValue();
-			return ("\t Current Total: "+totalValue);
+			return ("\tCurrent Total: "+totalValue);
         }
         return result;
 	}
