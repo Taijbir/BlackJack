@@ -1,3 +1,12 @@
+/*	CARD.java
+ * 	Author: Taijbir Kohli
+ * 	Class: Computer Studies
+ *	Teacher: Mr.Chu
+ *	Date: December 17, 2020
+ *	Assignment: Black Jack Assignment
+ */
+
+//Imports all
 import java.util.*;
 
 public class CARD {
@@ -22,7 +31,6 @@ public class CARD {
 	        value=inputRank+1;
 	    }
 		inputRank = value;
-		
 	}
 	
 	//Getters
@@ -51,48 +59,27 @@ public class CARD {
 		value = newValue;
 	}
 	
-	//Methods
+	//To String method
 	public String toString() {
-		return "\t Card: " + ranks[rank] +" of "+ suits[suit];
+		return "\tCard: " + ranks[rank] +" of "+ suits[suit];
 	}
-	
 	
 	//Main
 	public static void main(String[] args) {
+		//Creates ArrayList
 		ArrayList<CARD> arrayOfCards = new ArrayList<CARD>();
 		
+		//Populates ArrayList
         for (int i = 0; i <= 3; i++){
             for (int j = 0; j<=12; j++){
                 arrayOfCards.add(new CARD(j,i));
             }
         }
-        
-        for (int i = 0; i <= 51; i++){
-        	System.out.println(arrayOfCards.get(i));
-        	System.out.println(arrayOfCards.get(i).getValue());
-        }
-        System.out.println();
+
+      //Prints ArrayList
         System.out.println(arrayOfCards.get(0));
         System.out.println(arrayOfCards.get(13));
-        System.out.println(arrayOfCards.get(25));
-        System.out.println(arrayOfCards.get(37));
+        System.out.println(arrayOfCards.get(25)); 
 	}
-	
-	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//End
